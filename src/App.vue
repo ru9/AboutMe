@@ -34,4 +34,10 @@ export default {
   max-width: 960px;
   margin: 0 auto;
 }
+h1 {
+  font-size: 42px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 </style>
