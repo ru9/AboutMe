@@ -1,0 +1,48 @@
+{
+  "measurements": {
+    "0": {
+      "name": "Temperatur",
+      "value": "25,0 °C"
+    },
+    "1": {
+      "name": "Fuktighet",
+      "value": "87 %"
+    },
+    "2": {
+      "name": "Trykk (psi)",
+      "value": "1025"
+    }
+  },
+  "projects": {
+    "0": {
+      "img": "image",
+      "header": "Test project",
+      "description": "This is the test prject. There are meny like it, but this one is mine. This is the best test project that you can test with. If you dont like this test project, you should go rethink your life. No, seriously, go get your shit streight!",
+      "technology": "JS, Vue, HTML, Python",
+      "git": "https://github.com/ru9/RPi"
+    },
+    "1": {
+      "img": "image2",
+      "header": "Test project2",
+      "description": "This is the test prject. There are meny like it, but this one is mine. This is the best test project that you can test with. If you dont like this test project, you should go rethink your life. No, seriously, go get your shit streight!",
+      "technology": "JS, Vue, HTML, Python2",
+      "git": "https://github.com/ru9/RPi"
+    }
+  },
+  "aboutme": {
+    "img": "profile img",
+    "Name": "Runar Sunde",
+    "Email": "runisunde@gmail.com",
+    "Location": "Stavanger, Norway",
+    "links": {
+      "git": {
+        "link": "https://github.com/ru9",
+        "img": "gitimg"
+      },
+      "linkedin": {
+        "link": "https://www.linkedin.com/in/runar-sunde-47538686/",
+        "img": "linkedingimg"
+      }
+    }
+  }
+}
