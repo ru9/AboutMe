@@ -5,7 +5,7 @@
       <div>
         <img :src="aboutme.img" class="profile-img" />
       </div>
-      <div class="tst">
+      <div class="outer-aboutme-container">
         <div class="aboutme-containers">
           <div class="lable">Name:</div>
           <div class="info">{{ aboutme.Name }}</div>
@@ -34,11 +34,29 @@ export default {
 
   data() {
     return {
-      aboutme: {}
+      aboutme: {
+        img:
+          "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Fprofilepic.jpg?alt=media&token=abc36568-26cd-4c53-bcdd-d761123f2e32",
+        Name: "Runar Sunde",
+        Email: "runisunde@gmail.com",
+        Location: "Stavanger, Norway",
+        links: {
+          git: {
+            link: "https://github.com/ru9",
+            img:
+              "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
+          },
+          linkedin: {
+            link: "https://www.linkedin.com/in/runar-sunde-47538686/",
+            img:
+              "https://www.drupal.org/files/project-images/linkedin_circle_logo.png"
+          }
+        }
+      }
     };
   },
   mounted() {
-    this.loadAboutMe();
+    // this.loadAboutMe();
   },
   methods: {
     loadAboutMe: function() {
@@ -62,6 +80,7 @@ export default {
 .outer-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .profile-img {
   width: 200px;
@@ -72,11 +91,12 @@ export default {
   border-color: #003459;
   border-style: solid;
 }
-.tst {
+.outer-aboutme-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 25px;
+  min-height: 214px;
 }
 .aboutme-containers > div {
   display: flex;
