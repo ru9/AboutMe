@@ -85,6 +85,7 @@ export default {
 .profile-img {
   width: 200px;
   height: 200px;
+  margin-bottom: 20px;
   object-fit: cover;
   border-radius: 50%;
   border-width: 5px;
@@ -97,6 +98,7 @@ export default {
   justify-content: space-between;
   margin-left: 25px;
   min-height: 214px;
+  margin-bottom: 20px;
 }
 .aboutme-containers > div {
   display: flex;
