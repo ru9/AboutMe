@@ -71,7 +71,7 @@ export default {
 <style scope>
 #container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 </style>
