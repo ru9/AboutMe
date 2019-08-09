@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <StartImage />
     <AboutMe />
     <CollectionProjects class="projects" />
-    <CollectionMeasurements />
   </div>
 </template>
 
 <script>
-import CollectionMeasurements from "./components/CollectionMeasurements";
 import CollectionProjects from "./components/CollectionProjects";
 import AboutMe from "./components/AboutMe";
+import StartImage from "./components/StartImage";
 
 export default {
   name: "app",
   components: {
-    CollectionMeasurements,
+    StartImage,
     CollectionProjects,
     AboutMe
   }
@@ -30,8 +29,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-bottom: 65px !important;
-  margin: -10px;
-  max-width: 960px;
   margin: 0 auto;
 }
 h1 {
