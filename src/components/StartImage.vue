@@ -1,6 +1,6 @@
 <template>
   <div class="outer-container">
-    <img alt="startimage" src="../assets/computerhacking.jpg" class="start-image" />,
+    <img alt="startimage" src="../assets/computerhacking.jpg" class="start-image" />
     <div class="writing-container">
       <div class="name">Runar Sunde</div>
       <q class="quote">
@@ -23,8 +23,6 @@ export default {};
 }
 .start-image {
   object-fit: cover;
-  margin: 0 -10px;
-  margin-top: -10px;
   height: 100vh;
   width: 100vw;
 }

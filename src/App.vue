@@ -29,7 +29,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-bottom: 65px !important;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+html body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-size: 42px;
