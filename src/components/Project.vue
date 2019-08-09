@@ -50,7 +50,7 @@ export default {
   max-width: 320px;
   height: 400px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 1rem;
   border-width: 5px;
   border-color: #003459;
   border-style: solid;
@@ -63,8 +63,6 @@ export default {
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 10px;
-}
-.technology {
 }
 .img {
   width: 200px;
@@ -83,5 +81,11 @@ export default {
 .git {
   max-height: 50px;
   width: auto;
+}
+@media (max-width: 767px) {
+  .card {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
 }
 </style>
