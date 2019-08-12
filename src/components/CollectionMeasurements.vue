@@ -13,6 +13,7 @@
 <script>
 import Measurement from "./Measurement";
 import { setInterval } from "timers";
+import { getMeasurements } from "../backendService";
 
 export default {
   name: "CollectionMeasurements",
@@ -38,7 +39,7 @@ export default {
   methods: {
     loadData: function() {
       var self = this;
-      fetch("https://webpage-backend.firebaseio.com/measurements.json")
+      getMeasurements()
         .then(function(response) {
           return response.json();
         })

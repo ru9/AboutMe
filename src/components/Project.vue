@@ -12,7 +12,10 @@
     <div v-else class="project-content">
       <div class="description">{{ projectDescription }}</div>
       <a :href="projectGit">
-        <img class="git" src="https://image.flaticon.com/icons/svg/25/25231.svg" />
+        <img
+          class="git"
+          src="https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2FGit_icon.svg?alt=media&token=c0fc9300-c318-4a39-9ff7-7c708c6a7aba"
+        />
       </a>
     </div>
   </div>

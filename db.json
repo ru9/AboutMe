@@ -1,48 +1,48 @@
 {
-  "measurements": {
-    "0": {
+  "aboutme": {
+    "email": "runisunde@gmail.com",
+    "location": "Stavanger, Norway",
+    "name": "Runar Sunde",
+    "img": "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Fprofilepic.jpg?alt=media&token=abc36568-26cd-4c53-bcdd-d761123f2e32",
+    "links": {
+      "git": {
+        "img": "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2FGit_icon.svg?alt=media&token=c0fc9300-c318-4a39-9ff7-7c708c6a7aba",
+        "link": "https://github.com/ru9"
+      },
+      "linkedin": {
+        "img": "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Flinkedin_circle_logo.png?alt=media&token=581d412e-0ea1-42b1-951e-4196a91973cc",
+        "link": "https://www.linkedin.com/in/runar-sunde-47538686/"
+      }
+    }
+  },
+  "measurements": [
+    {
       "name": "Temperatur",
       "value": "25,0 °C"
     },
-    "1": {
+    {
       "name": "Fuktighet",
       "value": "87 %"
     },
-    "2": {
+    {
       "name": "Trykk (psi)",
       "value": "1025"
     }
-  },
-  "projects": {
-    "0": {
-      "img": "image",
+  ],
+  "projects": [
+    {
+      "description": "This is the test prject. There are meny like it, but this one is mine. This is the best test project that you can test with. If you dont like this test project, you should go rethink your life. No, seriously, go get your shit streight!",
+      "git": "https://github.com/ru9/RPi",
       "header": "Test project",
-      "description": "This is the test prject. There are meny like it, but this one is mine. This is the best test project that you can test with. If you dont like this test project, you should go rethink your life. No, seriously, go get your shit streight!",
-      "technology": "JS, Vue, HTML, Python",
-      "git": "https://github.com/ru9/RPi"
+      "img": "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Flogo.png?alt=media&token=07971af0-2266-4f8a-bfd8-5db9a6ab8231",
+      "technology": "JS, Vue, HTML, Python"
     },
-    "1": {
-      "img": "image2",
-      "header": "Test project2",
+    {
       "description": "This is the test prject. There are meny like it, but this one is mine. This is the best test project that you can test with. If you dont like this test project, you should go rethink your life. No, seriously, go get your shit streight!",
-      "technology": "JS, Vue, HTML, Python2",
-      "git": "https://github.com/ru9/RPi"
+      "git": "https://github.com/ru9/RPi",
+      "header": "Test project2",
+      "img": "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Flogo.png?alt=media&token=07971af0-2266-4f8a-bfd8-5db9a6ab8231",
+      "technology": "JS, Vue, HTML, Python2"
     }
-  },
-  "aboutme": {
-    "img": "profile img",
-    "Name": "Runar Sunde",
-    "Email": "runisunde@gmail.com",
-    "Location": "Stavanger, Norway",
-    "links": {
-      "git": {
-        "link": "https://github.com/ru9",
-        "img": "gitimg"
-      },
-      "linkedin": {
-        "link": "https://www.linkedin.com/in/runar-sunde-47538686/",
-        "img": "linkedingimg"
-      }
-    }
-  }
+  ]
 }

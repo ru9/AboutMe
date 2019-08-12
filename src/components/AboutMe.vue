@@ -8,15 +8,15 @@
       <div class="outer-aboutme-container">
         <div class="aboutme-containers">
           <div class="lable">Name:</div>
-          <div class="info">{{ aboutme.Name }}</div>
+          <div class="info">{{ aboutme.name }}</div>
         </div>
         <div class="aboutme-containers">
           <div class="lable">Email:</div>
-          <div class="info">{{ aboutme.Email }}</div>
+          <div class="info">{{ aboutme.email }}</div>
         </div>
         <div class="aboutme-containers">
           <div class="lable">Location:</div>
-          <div class="info">{{ aboutme.Location }}</div>
+          <div class="info">{{ aboutme.location }}</div>
         </div>
         <div class="icon-container">
           <a v-for="links in aboutme.links" :key="links.link" :href="links.link">
@@ -36,25 +36,7 @@ export default {
 
   data() {
     return {
-      aboutme: {
-        img:
-          "https://firebasestorage.googleapis.com/v0/b/webpage-backend.appspot.com/o/projectimages%2Fprofilepic.jpg?alt=media&token=abc36568-26cd-4c53-bcdd-d761123f2e32",
-        Name: "Runar Sunde",
-        Email: "runisunde@gmail.com",
-        Location: "Stavanger, Norway",
-        links: {
-          git: {
-            link: "https://github.com/ru9",
-            img:
-              "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
-          },
-          linkedin: {
-            link: "https://www.linkedin.com/in/runar-sunde-47538686/",
-            img:
-              "https://www.drupal.org/files/project-images/linkedin_circle_logo.png"
-          }
-        }
-      }
+      aboutme: null
     };
   },
   mounted() {
@@ -67,9 +49,9 @@ export default {
         .then(function(response) {
           return response.json();
         })
-        .then(function(aboutMe) {
-          self.aboutme = aboutMe;
-          window.console.log(JSON.stringify(aboutMe));
+        .then(function(data) {
+          self.aboutme = data;
+          window.console.log(JSON.stringify(data));
         });
     }
   }
