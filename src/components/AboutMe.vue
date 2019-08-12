@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import { getAboutMe } from "../backendService";
+
 export default {
   name: "AboutMe",
 
@@ -56,14 +58,12 @@ export default {
     };
   },
   mounted() {
-    // this.loadAboutMe();
+    this.loadAboutMe();
   },
   methods: {
     loadAboutMe: function() {
       var self = this;
-      fetch(
-        "https://webpage-backend.firebaseio.com/aboutme.json?auth=64KXsqvfRcKK2T5a3muOAfbLVVK7dMlEM93IVv0B"
-      )
+      getAboutMe()
         .then(function(response) {
           return response.json();
         })

@@ -71,9 +71,7 @@ export default {
   methods: {
     loadProjects: function() {
       var self = this;
-      fetch(
-        "https://webpage-backend.firebaseio.com/projects.json?auth=64KXsqvfRcKK2T5a3muOAfbLVVK7dMlEM93IVv0B"
-      )
+      fetch("https://webpage-backend.firebaseio.com/projects.json")
         .then(function(response) {
           return response.json();
         })

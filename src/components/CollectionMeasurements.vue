@@ -38,9 +38,7 @@ export default {
   methods: {
     loadData: function() {
       var self = this;
-      fetch(
-        "https://webpage-backend.firebaseio.com/measurements.json?auth=64KXsqvfRcKK2T5a3muOAfbLVVK7dMlEM93IVv0B"
-      )
+      fetch("https://webpage-backend.firebaseio.com/measurements.json")
         .then(function(response) {
           return response.json();
         })
