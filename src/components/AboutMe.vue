@@ -19,7 +19,13 @@
           <div class="info">{{ aboutme.location }}</div>
         </div>
         <div class="icon-container">
-          <a v-for="links in aboutme.links" :key="links.link" :href="links.link">
+          <a
+            v-for="links in aboutme.links"
+            :key="links.link"
+            :href="links.link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img :src="links.img" class="link-icon" />
           </a>
         </div>
